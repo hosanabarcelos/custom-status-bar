@@ -1,23 +1,75 @@
 {
-  "name": "customstatusbar",
-  "displayName": "customstatusbar",
-  "description": "",
+  "name": "custom-status-bar",
+  "displayName": "Custom Status Bar 🎨",
+  "description": "Add a cool text, your name, a nice icon, and even different colors to your VS Code Status Bar!",
+  "icon": "images/icon.png",
+  "author": "@hosanabarcelos",
+  "publisher": "hosana",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.92.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hosanabarcelos/custom-status-bar"
+  },
   "categories": [
+    "Themes",
+    "Visualization",
     "Other"
   ],
-  "activationEvents": [],
+  "keywords": [
+    "statusbar",
+    "status",
+    "botombar",
+    "custom",
+    "dark",
+    "item",
+    "personalize",
+    "customizer",
+    "custom",
+    "personal"
+  ],
+  "activationEvents": [
+    "*"
+  ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "customstatusbar.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    "configuration": {
+			"title": "Status Bar Custom Item",
+			"properties": {
+				"statusBarCustomItem.text": {
+					"type": "string",
+					"default": "Hosana Barcelos",
+					"description": "Custom Item Text (it can be your name or a cool text!)"
+				},
+				"statusBarCustomItem.tooltip": {
+					"type": "string",
+					"default": "Breathing music and living on coffee!",
+					"description": "Custom Item Tooltip Text"
+				},
+				"statusBarCustomItem.icon": {
+					"type": "string",
+					"default": "🪐",
+					"description": "Custom Item Icon"
+				},
+				"statusBarCustomColor.primaryBackgroundColor": {
+					"type": "string",
+					"default": "#171717",
+					"description": "StatusBar background color"
+				},
+				"statusBarCustomColor.secondaryBackgroundColor": {
+					"type": "string",
+					"default": "#000000",
+					"description": "StatusBar No Folder and Debugging background color"
+				},
+				"statusBarCustomColor.foregroundColor": {
+					"type": "string",
+					"default": "#FFFFFF",
+					"description": "Foreground (text color)"
+				}
+			}
+		}
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
