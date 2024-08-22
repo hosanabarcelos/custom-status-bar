@@ -1,11 +1,11 @@
 {
   "name": "custom-status-bar",
-  "displayName": "Custom Status Bar 🎨",
+  "displayName": "Status Bar (Custom) 🎨",
   "description": "Add a cool text, your name, a nice icon, and even different colors to your VS Code Status Bar!",
   "icon": "images/icon.png",
   "author": "@hosanabarcelos",
   "publisher": "hosana",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.92.0"
   },
@@ -21,12 +21,12 @@
   "keywords": [
     "statusbar",
     "status",
-    "botombar",
+    "bottombar",
     "custom",
     "dark",
     "item",
     "personalize",
-    "customizer",
+    "customize",
     "custom",
     "personal"
   ],
